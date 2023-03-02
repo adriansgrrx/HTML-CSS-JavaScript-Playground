@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUP Map</title>
+    <link rel="icon" href="/images/pup-logo-Polytechnic_University_of_the_Philippines.png" type="image/icon type">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>  
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+</head>
+<body id="body">
+    <div class="main-container">
+        <header class="header">
+            <div class="header-container">
+                <img id="PUP-logo" src="/images/pup-logo-Polytechnic_University_of_the_Philippines.png" alt="PUP-logo">
+                <div class="heading-texts">
+                    <h2 id="pup-name">Polytechnic University of the Philippines</h2>
+                    <h2 id="pup-tagline">The Country's 1st PolytechnicU</h2>
+                </div>
+                <img id="home" src="/images/home-icon.png" alt="Home" onclick="backToHome()">
+            </div>
+        </header>
+        <main>
+            <img src = "images/PUP-main-map.png" alt = "PUP Map" usemap = "#PUP-map" class="my-map-area" />
+            <div class="welcome-section">
+                <div id="welcome-text">
+                    <p>Welcome to Polytechnic University of the Philippines(PUP) - Main Campus Map</p>
+                </div>
+                <div id="welcome-body">
+                    <p id="instruction">This is a simplified map of the PUP-Main Campus, and by hovering your pointer over any of the map's components, you can quickly explore specific buildings or locations inside the university.</p>
+                    <p id="proceed">To proceed, please click the <b>View Map</b> button.</p>
+                </div>
+                <div class="view">
+                    <button class="click-me" onclick="viewPUPMap()">View Map</button>
+                </div>
+                <p id="know-more">Want to know more? Click <a href="https://www.pup.edu.ph/about/maps" target="_blank"><b>here</b></a> to visit the official university map.</p>
+            </div>
+            <map name="PUP-map" id="map">   
+                <area id="oval" shape = "poly" coords = "750,300,637,455,633,467,630,477,629,488,629,499,629,509,630,516,631,522,633,528,635,533,638,540,644,551,651,560,656,565,661,569,666,574,673,579,684,584,693,588,700,589,708,591,720,592,733,591,744,590,756,586,766,582,776,576,782,570,788,564,796,555,896,416,900,407,904,397,906,387,907,377,907,367,907,358,905,348,903,340,899,331,894,321,886,309,876,300,865,291,844,281,833,279,817,277,798,278,782,281,763,290" alt = "Track and Football Oval" href = "images/PUP-oval.jpg" onmouseover = "displayInfoContainer('images/PUP-oval.jpg', 'PUP Oval', 'This is where students go for Physical Education activities and some of the biggest events also happen here')" onmouseout = "hideInfoContainer()">
+
+                <area id="grandstand" shape = "poly" coords = "690,326,696,330,700,326,707,334,692,355,694,360,681,379,674,377,659,399,653,394,654,390,648,385,664,364,658,358,668,344,674,349,680,341" alt = "PUP-grandstand" href = "images/PUP-grandstand.jpg" onmouseover = "displayInfoContainer('images/PUP-grandstand.jpg', 'PUP grandstand', 'PUP Grandstand is a bleacher situated nearby to Apolinario Mabini Museum and Apolinario Mabini historical marker.')" onmouseout = "hideInfoContainer()">
+
+                <area id="community-bldg" shape = "poly" coords = "842,505,868,469,882,478,853,516" alt = "PUP-community bldg" href = "images/PUP-Gabriela Silang.jpg" onmouseover = "displayInfoContainer('images/PUP-Gabriela Silang.jpg', 'community building (Gabriela Silang)', 'A university-based community pantry known as PUP Lingap Komunidad Community Pantry.')" onmouseout = "hideInfoContainer()">
+
+                <area id="guard-house" shape = "poly" coords = "867,256,879,257,879,269,866,269" alt = "PUP-guard house" href = "images/PUP-guard house.jpg" onmouseover = "displayInfoContainer('images/PUP-guard house.jpg', 'guard house', 'A building used to house personnel and security equipment located in the main gate of the university.')" onmouseout = "hideInfoContainer()">
+
+                <area id="main-gate" shape = "poly" coords = "865,232,904,230,914,254,865,253" alt = "PUP-main-gate" href = "images/PUP-main gate.jpg" onmouseover = "displayInfoContainer('images/PUP-main gate.jpg', 'main gate', 'The main entrance to the university located at the very front of the campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="pylon" shape = "poly" coords = "878,201,906,202,906,229,880,229" alt = "PUP-pylon" href = "images/PUP-pylon.jpg" onmouseover = "displayInfoContainer('images/PUP-pylon.jpg', 'pylon', 'The Pylon came to symbolized truth, excellence and wisdom. Located beside tha main gate')" onmouseout = "hideInfoContainer()">
+
+                <area id="tennis-court" shape = "poly" coords = "722,190,795,195,798,135,725,131" alt = "PUP-tennis court" href = "images/PUP-tennis court.jpg" onmouseover = "displayInfoContainer('images/PUP-tennis court.jpg', 'tennis court', 'The one and only tennis court of the university where tennis events can take place.')" onmouseout = "hideInfoContainer()">
+
+                <area id="outdor court" shape = "poly" coords = "616,125,708,129,704,190,612,184" alt = "PUP-outdoor court" href = "images/PUP-outdoor court.jpg" onmouseover = "displayInfoContainer('images/PUP-outdoor court.jpg', 'PUP Outdoor courts', 'A two-whole-outdoor-court inside the campus exclusively available for basketball and volleyball events.')" onmouseout = "hideInfoContainer()">
+
+                <area id="gym" shape = "poly" coords = "683,24,677,112,815,122,823,33" alt = "PUP-gymnasium" href = "images/PUP-gymnasium.jpg" onmouseover = "displayInfoContainer('images/PUP-gymnasium.jpg', 'Gymnasium', 'The official university gymnasium and sports center designed and equipped for various sports, physical training, and exercise.')" onmouseout = "hideInfoContainer()">
+
+                <area id="pool" shape = "poly" coords = "556,33,665,41,660,122,565,115,553,86" alt = "PUP-pool" href = "images/PUP-pool.jpg" onmouseover = "displayInfoContainer('images/PUP-pool.jpg', 'Swimming pool', 'An olympic-sized swimming pool exclusively available for PUP-ians for educational and athletic purposes.')" onmouseout = "hideInfoContainer()">
+
+                <area id="PE-building" shape = "poly" coords = "501,6,531,7,525,144,495,143" alt = "PUP-PE bldg" href = "images/PUP-PE bldg.jpg" onmouseover = "displayInfoContainer('images/PUP-PE bldg.jpg', 'Physical Education Building', 'A university building specialized for learning about physical, fitness, combative education etc. ')" onmouseout = "hideInfoContainer()">
+
+                <area id="covwalkway1" shape = "poly" coords = "879,233,629,221,623,210,878,218" alt = "PUP-cov-walkway" href = "images/PUP-walkway.jpg" onmouseover = "displayInfoContainer('images/PUP-walkway.jpg', 'Covered walkway', 'A long-roof-covered walkway at the entrance of the university.')" onmouseout = "hideInfoContainer()">
+
+                <area id="covwalkway2" shape = "poly" coords = "880,250,795,249,680,309,594,432,603,438,688,314,793,255,880,257" alt = "PUP-cov-walkway" href = "images/PUP-walkway.jpg" onmouseover = "displayInfoContainer('images/PUP-walkway.jpg', 'Covered walkway', 'A long-roof-covered walkway at the entrance of the university.')" onmouseout = "hideInfoContainer()">
+
+                <area id="walkway" shape = "poly" coords = "868,250,627,243,628,221,867,232" alt = "PUP-walkway" href = "images/PUP-walkway2.jpg" onmouseover = "displayInfoContainer('images/PUP-walkway2.jpg', 'University Walkway', 'A wide path that is exclusive not only for the students but also for small vehicles to enter the university.')" onmouseout = "hideInfoContainer()">
+
+                <area id="obelisk" shape = "poly" coords = "575,202,568,205,561,211,558,220,557,230,561,239,567,245,577,248,584,250,594,247,601,241,605,234,604,226,603,217,599,210,592,204,584,202" alt = "Mabini Shrine" href = "images/PUP-Obelisk.jpg" onmouseover = "displayInfoContainer('images/PUP-Obelisk.jpg', 'PUP Obelisk/Mabini Monument', 'The Obelisk, standing majestic on its base, depicts the strength of the university as an institution.')" onmouseout = "hideInfoContainer()">
+
+                <area id="Apolinario Mabini Shrine" shape = "poly" coords = "667,293,646,322,612,297,633,269" alt = "Mabini Shrine" href = "images/PUP-Apolinario shrine2.jpg" onmouseover = "displayInfoContainer('images/PUP-Apolinario shrine2.jpg', 'Apolinario Mabini Shrine', 'The bamboo and nipa Shrine currently located within the campus, belonged to the del Rosario family. ')" onmouseout = "hideInfoContainer()">
+
+                <area id="Apolinario Mabini Shrine" shape = "poly" coords = "611,311,638,326,624,351,596,335" alt = "Mabini Shrine" href = "images/PUP-Apolinario shrine.jpg" onmouseover = "displayInfoContainer('images/PUP-Apolinario shrine.jpg', 'Apolinario Mabini Shrine', 'Various interactive exhibits can be seen inside, including a touch screen terminal featuring Mabini’s life.')" onmouseout = "hideInfoContainer()">
+
+                <area id="Freedom Park" shape = "poly" coords = "607,267,594,272,581,273,564,270,556,268,544,281,526,298,507,316,510,322,517,318,539,356,547,344,539,328,557,318,565,334,565,338,556,345,548,344,539,352,534,364,537,369,541,366,546,376,542,379,545,384,564,369,572,349" alt = "Freedom Park" href = "images/PUP-Freedom Park.jpg" onmouseover = "displayInfoContainer('images/PUP-Freedom Park.jpg', 'PUP Freedom Park', 'A very wide space in the campus that can hold various huge events and a place where flag ceremony happens.')" onmouseout = "hideInfoContainer()">
+
+                <area id="flag-pole" shape = "poly" coords = "541,329,556,320,565,334,549,344" alt = "Freedom Park" href = "images/PUP-Flag pole.jpg" onmouseover = "displayInfoContainer('images/PUP-Flag pole.jpg', 'flag pole', 'The exact location where the Philippine flag is standing inside the campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="chapel" shape = "poly" coords = "482,454,522,437,563,454,581,495,564,536,523,552,482,535,465,493" alt = "Interfaith Chapel" href = "images/PUP-Interfaith Chapel.jpg" onmouseover = "displayInfoContainer('images/PUP-Interfaith Chapel.jpg', 'Interfaith Chapel', 'The ecumenical chapel (known as the Interfaith Chapel) is a nondenominational Christian church located inside the PUP ')" onmouseout = "hideInfoContainer()">
+
+                <area id="nutri-and-sci-food" shape = "poly" coords = "433,596,434,575,590,575,590,596,533,596" alt = "Nutri and Sci Food Bldg" href = "images/PUP-Nutrition bldg.png" onmouseover = "displayInfoContainer('images/PUP-Nutrition bldg.png', 'Nutrition and Food Science Building', 'Nutrition and Food Science Building is an educational building situated in the campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="campus-dev" shape = "poly" coords = "341,596,341,586,397,586,397,596" alt = "campus development and management building" href = "images/PUP-Maintenance Bldg.jpg" onmouseover = "displayInfoContainer('images/PUP-Maintenance Bldg.jpg', 'development and management building', 'Where the development and operation of the coordinated circulation, building design, aesthetics and such happen.')" onmouseout = "hideInfoContainer()">
+
+                <area id="fery-station" shape = "poly" coords = "262,570,267,568,264,563,278,557,291,587,277,594,273,587,269,587" alt = "Ferry Station" href = "images/PUP-ferry station.jpg" onmouseover = "displayInfoContainer('images/PUP-ferry station.jpg', 'Ferry Station', 'The nearest train station to PUP Sta.Mesa Pasig River Ferry station - Sta.Ana Ferry Terminal in Manila is a 17 min walk away.')" onmouseout = "hideInfoContainer()">
+
+                <area id="generator-facility" shape = "poly" coords = "265,552,261,542,269,538,273,548" alt = "Ferry Station" href = "images/PUP-generator.jpg" onmouseover = "displayInfoContainer('images/PUP-generator.jpg', 'Generator Facility', 'This is where the power supply management takes place to power-up the university.')" onmouseout = "hideInfoContainer()">
+
+                <area id="pasig-river" shape = "poly" coords = "1,0,39,1,97,86,204,428,265,596,19,596,1,596,-1,575" alt = "Pasig River" href = "images/Pasig River.jpg" onmouseover = "displayInfoContainer('images/Pasig River.jpg', 'Pasig River', 'The Pasig River is a body of water that connects Laguna de Bay to Manila Bay. It can be seen from PUP-Main Campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="printing-press-bldg" shape = "poly" coords = "103,78,117,69,95,37,81,46" alt = "Printing Press Building" href = "images/PUP-Printing Press.jpg" onmouseover = "displayInfoContainer('images/PUP-Printing Press.jpg', 'Printing Press Building', 'PUP Printing Press Building is a publishing house located inside the campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="property-bldg" shape = "poly" coords = "82,0,83,17,97,17,97,24,129,24,130,16,144,16,143,1" alt = "Property Building" href = "images/PUP-Property bldg.jpg" onmouseover = "displayInfoContainer('images/PUP-Property bldg.jpg', 'Property Building', 'The facility where facilities and land owned, leased, or under the primary control of the university were kept.')" onmouseout = "hideInfoContainer()">
+
+                <area id="south-wing" shape = "poly" coords = "365,453,333,472,357,511,354,513,361,525,313,554,303,538,300,540,246,448,250,445,240,429,289,401,295,413,300,412,324,452,354,434" alt = "South Wing" href = "images/PUP-South Wing.jpg" onmouseover = "displayInfoContainer('images/PUP-South Wing.jpg', 'South Wing', 'This is where the Southern portion of the main building is located.')" onmouseout = "hideInfoContainer()">
+
+                <area id="east-wing" shape = "poly" coords = "367,453,367,568,379,568,379,579,420,579,420,569,430,569,429,453" alt = "East Wing" href = "images/PUP-East Wing.jpg" onmouseover = "displayInfoContainer('images/PUP-East Wing.jpg', 'East Wing', 'This is where the Eastern portion of the main building is located.')" onmouseout = "hideInfoContainer()">
+
+                <area id="west-wing" shape = "poly" coords = "388,380,355,433,255,375,262,363,253,358,272,325,279,329,285,320" alt = "West Wing" href = "images/PUP-West Wing.png" onmouseover = "displayInfoContainer('images/PUP-West Wing.png', 'West Wing', 'This is where the Western portion of the main building is located.')" onmouseout = "hideInfoContainer()">
+
+                <area id="north-wing" shape = "poly" coords = "407,380,438,432,538,375,531,363,540,357,521,326,514,330,508,323" alt = "North Wing" href = "images/PUP-North Wing.jpg" onmouseover = "displayInfoContainer('images/PUP-North Wing.jpg', 'North Wing', 'This is where the Northern portion of the main building is located. It can be easily seen once you enter the campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="dome" shape = "poly" coords = "387,381,407,381,439,434,428,453,367,453,354,433" alt = "Dome" href = "images/PUP-Dome.jpg" onmouseover = "displayInfoContainer('images/PUP-Dome.jpg', 'Dome', 'This is the very center of the main building, it is called dome for its structure which depicts a dome-like shape of the building.')" onmouseout = "hideInfoContainer()">
+
+                <area id="amphitheater" shape = "poly" coords = "364,305,385,304,386,300,405,301,413,313,412,317,423,332,414,337,407,339,400,339,393,338,386,335,379,332,373,327,368,319,365,310" alt = "Dome" href = "images/PUP-Amphitheater.jpg" onmouseover = "displayInfoContainer('images/PUP-Amphitheater.jpg', 'Amphitheater', 'A university-base-open-air venue used for entertainment, performances, sports and such, inside the campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="lagoon" shape = "poly" coords = "472,149,465,147,456,147,447,149,440,154,436,161,433,169,433,179,433,185,433,191,433,198,433,205,429,215,423,218,414,218,407,219,401,220,396,224,391,228,388,235,385,240,385,246,385,251,385,257,386,263,387,268,387,273,385,278,372,279,363,282,358,285,358,306,363,304,370,300,381,298,387,299,393,298,399,298,404,296,409,294,413,294,418,290,426,285,432,280,437,275,445,266,449,260,452,255,456,249,459,242,462,234,463,228,464,219,466,214,471,211,477,206,480,202,484,197,488,191,490,186,491,178,490,171,488,164" alt = "lagoon" href = "images/PUP-lagoon.jpg" onmouseover = "displayInfoContainer('images/PUP-lagoon.jpg', 'Lagoon', 'This was probably the most hung-out place compared to the rest of the spot in PUP. A picnic area during breaks. ')" onmouseout = "hideInfoContainer()">
+
+                <area id="NA-LRC" shape = "poly" coords = "388,224,431,208,405,130,479,105,475,96,473,97,475,96,471,84,473,81,464,59,391,84,363,7,318,24,346,102,350,100,354,110,342,115,320,103,316,105,314,109,331,157,337,161,341,160,343,154,351,139,358,136" alt = "PUP-NA-LRC" href = "images/PUP-NA-LRC.jpg" onmouseover = "displayInfoContainer('images/PUP-NA-LRC.jpg', 'Ninoy Aquino Learning Resources Center', 'This is the Main Library almost all the students in PUP considers.')" onmouseout = "hideInfoContainer()">
+
+                <area id="water-tank" shape = "poly" coords = "296,63,303,54,316,54,325,62,325,75,318,83,305,84,297,76" alt = "Water Tank" href = "images/PUP-water tank.jpg" onmouseover = "displayInfoContainer('images/PUP-water tank.jpg', 'R.C. Overhead Water Tank', 'A very tall water tank located near the Learning Resouces Center.')" onmouseout = "hideInfoContainer()">
+
+                <area id="water-pump" shape = "poly" coords = "288,9,288,20,313,21,314,2,304,1,304,10" alt = "Water Pump" href = "images/PUP-water pump.jpg" onmouseover = "displayInfoContainer('images/PUP-water pump.jpg', 'Water Pump Facility', 'It is a storage and collection of university\'s water supply.')" onmouseout = "hideInfoContainer()">
+
+                <area id="lab-high2" shape = "poly" coords = "174,28,254,75,262,60,183,13" alt = "Lab High2" href = "images/PUP-lab high2.jpg" onmouseover = "displayInfoContainer('images/PUP-lab high2.jpg', 'Laboratory High School', 'PUPLHS, is the laboratory school of the PUP College of Education located in the main campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="lab-high3" shape = "poly" coords = "248,107,257,93,167,39,157,54" alt = "Lab High3" href = "images/PUP-lab high3.jpg" onmouseover = "displayInfoContainer('images/PUP-lab high3.jpg', 'Laboratory High School', 'PUPLHS, is the laboratory school of the PUP College of Education located in the main campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="lab-high1" shape = "poly" coords = "144,83,153,67,284,145,276,159,174,100,163,119,238,164,250,144,257,149,246,168,299,200,290,215,145,130,155,114,166,96" alt = "Lab High1" href = "images/PUP-lab high1.jpg" onmouseover = "displayInfoContainer('images/PUP-lab high1.jpg', 'Laboratory High School', 'PUPLHS, is the laboratory school of the PUP College of Education located in the main campus.')" onmouseout = "hideInfoContainer()">
+
+                <area id="charlie" shape = "poly" coords = "277,266,299,230,189,165,168,201" alt = "Charlie bldg" href = "images/PUP-Charlie bldg.jpg" onmouseover = "displayInfoContainer('images/PUP-Charlie bldg.jpg', 'Charlie del Rosario Hall', 'The Charlie Del Rosario Building is a structure dedicated to the first victim of the Marcos Regime.')" onmouseout = "hideInfoContainer()">
+
+                <area id="canteen" shape = "poly" coords = "241,254,268,271,256,293,227,277,232,269" alt = "canteen" href = "images/PUP-canteen.jpg" onmouseover = "displayInfoContainer('images/PUP-canteen.jpg', 'Student Canteen', 'Looking for an affordable meal? PUP canteen got you! With the university\'s best seller and favorite snacks and drinks.')" onmouseout = "hideInfoContainer()">
+
+                <area id="samaguita" shape = "poly" coords = "217,316,213,321,200,314,203,309,195,303,210,276,259,304,243,330" alt = "samaguita" href = "images/PUP-sampaguita.jpg" onmouseover = "displayInfoContainer('images/PUP-sampaguita.jpg', 'Sampaguita Building', 'Sampaguita building is one of the many educational buildings all-over the university.')" onmouseout = "hideInfoContainer()">
+
+                <area id="gazebo" shape = "poly" coords = "677,260,677,265,690,265,689,260" alt = "gazebo" href = "images/PUP-gazebo.jpg" onmouseover = "displayInfoContainer('images/PUP-gazebo.jpg', 'Gazebo', 'An open-air and free structure located inside the campus that is available for every student, they can rest a bit here or simply chill.')" onmouseout = "hideInfoContainer()">
+
+                <area id="tahanan-ng-alumni" shape = "poly" coords = "534,37,550,39,548,80,532,80" alt = "tahanan-ng-alumni" href = "images/PUP-tahanan.jpg" onmouseover = "displayInfoContainer('images/PUP-tahanan.jpg', 'Tahanan ng Almmuni', 'PUP Tahanan ng Alumni Building is a educational building located in the main campus. It is located in PUP P.E. Building.')" onmouseout = "hideInfoContainer()">
+
+                <area id="visitor" shape = "poly" coords = "834,190,863,192,863,218,833,217" alt = "visitor" href = "images/PUP-visitor.jpg" onmouseover = "displayInfoContainer('images/PUP-visitor.jpg', 'Visitor Information Center', 'An information corner where you can ask about certain things e.g. university\'s agenda/s, concerns and such.')" onmouseout = "hideInfoContainer()">
+            </map>
+        </main>
+        <span id="head-desc-container"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
