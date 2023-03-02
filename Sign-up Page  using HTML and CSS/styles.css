@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;  
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(45deg, #856ef8, #ae5bbf, #ec3d68);
+}
+
+h1{
+    width: 100%;
+    font-size: 1.7em;
+    line-height: 47px;
+    text-align: center;
+}
+
+p{
+    font-size: 0.6em;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: .5rem;
+}
+
+.login__section{
+    width: 475px;
+    min-width: 300px;
+    max-width: 500px;
+    font-size: 24px;
+    position: absolute;
+    top: 13%;
+    left: 35%;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px -10px black;
+}
+
+.page__inputs input{
+    font-size: 1em;
+    margin: .5rem 1rem;
+    text-align: start;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #e8e8e8;
+}
+
+#submit input{
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: .3rem 5.12rem;
+    background-image: linear-gradient(45deg, #856ef8, #ae5bbf, #ec3d68);
+    box-shadow: 2px 9px 20px -12px black;
+}
+
+#submit {
+    text-align: center;
+}
+
+#submit input:active{
+    color: #856ef8;
+}
+
+#register a{
+    font-size: 0.9em;
+    text-decoration: none;
+    position: relative;
+    left: 39%;
+}
