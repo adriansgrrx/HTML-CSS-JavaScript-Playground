@@ -1,0 +1,42 @@
+html {
+	cursor: url("Images/target-crosshair.png"), auto;
+}
+
+body{
+	overflow: hidden;
+	margin: 0;
+}
+
+#canvas1{
+
+	position:absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#collisionCanvas{
+	/* background: red; */
+	opacity: 0;
+}
+
+#play-again{
+	font-family: Midfield, sans-serif;
+	font-size: 25px;
+	font-weight: 900;
+	color: white;
+	background: #494646;
+	text-transform: uppercase;
+	position: absolute;
+	top: 28rem;
+	left: 41rem;
+	padding: 15px 50px 10px 50px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 2px 5px 1px #000000;
+	display: none;
+}
+
+#play-again:hover {
+	transform: scale(0.95);
+	transition: ease-in-out 0.5s;
+}
