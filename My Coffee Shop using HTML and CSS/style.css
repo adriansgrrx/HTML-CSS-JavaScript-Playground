@@ -1,0 +1,679 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-size: 24px;
+}
+
+.main__web{
+    background-color: #e9e7e5;
+    height: 1010px;
+}
+
+.main__heading{
+    height: 275px;
+    color: #fff;
+    font-family: 'Sergio Trendy', sans-serif;
+}
+
+.main__heading img{
+    width: 15%;
+    margin: 1% 0 0 36%;
+    float: left;
+    text-shadow: 2px 2px 5px #000;
+    filter: drop-shadow(1px 5px 3px #222);
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 200;
+    margin: 3% 20% 0% 0%;
+    float: right;
+}
+
+.title h1{
+    color:  #c5812b;
+    font-size: 3.75em;
+    width: 50%;
+    text-shadow: 1px 2px 4px #000;
+}
+
+.title p{
+    color: #352101;
+    font-size: 1.25em;
+    width: 40%;
+}
+
+.navbar__container{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem;
+    float: left;
+    background-color: #c5812b;
+    box-shadow: 10px 10px 20px -10px black;
+    border-radius: 20px;
+    margin: 0% 0% 0% 1%;
+    width: 21.6%;
+    height: 500px;
+}
+
+.navbar__obj{
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+.navbar__obj a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    list-style: none;
+    font-weight: 100;
+}
+
+.navbar__menu{
+    margin: 1rem;
+}
+
+#home-page,
+#menu-page,
+#music-page,
+#jobs-page{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.menu__obj a{
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar__menu,
+.menu__obj{
+    list-style: none;
+}
+
+.about__section{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 21.5%;
+    height: 244px;
+    padding: 1rem;
+    float: left;
+    background-color: #c5812b;
+    box-shadow: 10px 10px 20px -10px black;
+    border-radius: 20px;
+    margin: 1% 0% 0% 1%;
+}
+
+.main__display{
+    background-color: #e9e7e5;
+    width: 75%;
+    height: 500px;
+    float: right;
+    margin-right: 1%;
+    margin-left: 1%;
+    box-shadow: 10px 10px 20px -10px black;
+    border-radius: 20px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.home__page{
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-right: .5px #8c8a8a solid;
+    margin: 0rem 0rem 0rem 0rem;
+    padding-right: 1rem;
+    float: left;
+    background-color: #c5812b;
+}
+
+.home__page p, b{
+    color: #fff;
+    font-family: 'Sergio Trendy', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    padding-top: 1rem;
+    text-align: center;
+    letter-spacing: 2.5px;
+    margin-top: .5%;
+    text-shadow: 1px 2px 10px #000;
+}
+
+.home__page b{
+    color: #c5812b;
+    
+}
+
+.home__page #edit__me{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+    padding-bottom: 1%;
+}
+
+/* *********************************************/
+#img1,
+#img2,
+#img3,
+#img4{
+    background-color: #fff;
+    width: 20%;
+    height: 65%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px -10px black;
+    float: left;
+}
+
+#img1  img,
+#img2  img,
+#img3  img,
+#img4  img{
+    width: 100%;
+    margin: .10rem .10rem .10rem .10rem;
+    border-radius: 20px;
+}
+
+#img2 img{
+    width: 100%;
+    height: 100%;
+    margin: .10rem .10rem 1rem .10rem;
+    border-radius: 20px;
+}
+#img1 h3,
+#img2 h3,
+#img3 h3,
+#img4 h3{
+    font-size: 18px;
+    letter-spacing: .0001px;
+    text-align: center;
+    padding-top: 1%;
+}
+
+#img1  button,
+#img2  button,
+#img3  button,
+#img4  button{
+    color: #fff;
+    background-color: #352101;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-left: 26%;
+    margin-top: 5%;
+    border: none;
+}
+
+#img1 button:hover,
+#img2 button:hover,
+#img3 button:hover,
+#img4 button:hover{
+    background-color: #c5812b;
+}
+/* *********************************************/
+.tiles{
+    margin-left: 6%;
+}
+
+.display_img{
+    transition: 0.3s all ease-in-out;
+}
+
+.display_img:hover {
+    transform: scale(1.05);
+}
+.display_img{
+    margin: 2%;
+    padding: 2%;
+}
+.display_img #img1{
+    margin-left: 5%;
+    padding: 2%;
+}
+/* *********************************************/
+.click__me{
+    border-right: .5px #8c8a8a solid;
+    height: 2780px;
+    margin: 0rem 1rem 1rem 1rem;
+    padding-right: 1rem;
+    float: left;
+
+}
+.click__me ul{
+    position: sticky;
+    top: 5px;
+
+}
+
+.menu__obj{
+    padding-bottom: .75rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu__obj h1, a{
+    color: #000;
+    font-size: 24px;
+}
+
+#menu,
+#Drinks,
+#Food{
+    font-weight: 900;
+}
+
+#menu{
+    padding-top: 1rem;
+}
+
+.drinks__sec h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+#matamis h1,
+#tanghalian h1,
+#almusal h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-right: 10rem;
+    margin-left: 24rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+#cold-brew #a{
+    color: #e9e7e5;
+}
+
+.grouped h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    margin-right: 10rem;
+    margin-left: 24rem;
+    text-align: center;
+    font-weight: 200;
+}
+/* *********************************************************************** */
+#prod1,
+#prod2,
+#prod3,
+#prod4,
+#prod5,
+#prod6,
+#prod7,
+#prod8,
+#prod9,
+#prod10,
+#prod11,
+#prod12{
+    background-color: #fff;
+    width: 15%;
+    height: 65%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px -10px black;
+    float: left;
+    margin-left: 1.5%;
+    margin-bottom: 3rem;
+}
+
+#prod1 img,
+#prod2 img,
+#prod3 img,
+#prod4 img,
+#prod5 img,
+#prod6 img,
+#prod7 img,
+#prod8 img,
+#prod9 img,
+#prod10 img,
+#prod11 img,
+#prod12 img{
+    width: 90%;
+    margin: .50rem .50rem .50rem .40rem;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#prod1 h3,
+#prod2 h3,
+#prod3 h3,
+#prod4 h3,
+#prod5 h3,
+#prod6 h3,
+#prod7 h3,
+#prod8 h3,
+#prod9 h3,
+#prod10 h3,
+#prod11 h3,
+#prod12 h3{
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    letter-spacing: .0001px;
+    text-align: center;
+    padding-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    font-weight: 400;
+}
+
+#prod1 button,
+#prod2 button,
+#prod3 button,
+#prod4 button,
+#prod5 button,
+#prod6 button,
+#prod7 button,
+#prod8 button,
+#prod9 button,
+#prod10 button,
+#prod11 button,
+#prod12 button{
+    font-size: 18px;
+    color: #fff;
+    background-color: #352101;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    border: none;
+}
+
+#prod1 button:hover,
+#prod2 button:hover,
+#prod3 button:hover,
+#prod4 button:hover,
+#prod5 button:hover,
+#prod6 button:hover,
+#prod7 button:hover,
+#prod8 button:hover,
+#prod9 button:hover,
+#prod10 button:hover,
+#prod11 button:hover,
+#prod12 button:hover{
+    background-color: #c5812b;
+}
+
+.main__prod{
+    transition: 0.3s all ease-in-out;
+}
+
+.main__prod:hover {
+    transform: scale(1.05);
+}
+/* *********************************************************************** */
+.foods__sec h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 200;
+}
+
+#tanghalian h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-top: 14rem;
+    margin-bottom: 1rem;
+    /* margin: 0px; */
+    text-align: center;
+    font-weight: 200;
+}
+/* *********************************************************************** */
+#prod13,
+#prod14,
+#prod15,
+#prod16,
+#prod17,
+#prod18,
+#prod19,
+#prod20,
+#prod21,
+#prod22,
+#prod23,
+#prod24{
+    background-color: #fff;
+    width: 15%;
+    height: 65%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px -10px black;
+    float: left;
+    margin-left: 5.5%;
+    margin-bottom: 2rem;
+}
+
+#prod13 img,
+#prod14 img,
+#prod15 img,
+#prod16 img,
+#prod17 img,
+#prod18 img,
+#prod19 img,
+#prod20 img,
+#prod21 img,
+#prod22 img,
+#prod23 img,
+#prod24 img{
+    width: 90%;
+    margin: .50rem .50rem .50rem .40rem;
+    border-radius: 15px 15px 0px 0px;
+}
+
+#prod13 h3,
+#prod14 h3,
+#prod15 h3,
+#prod16 h3,
+#prod17 h3,
+#prod18 h3,
+#prod19 h3,
+#prod20 h3,
+#prod21 h3,
+#prod22 h3,
+#prod23 h3,
+#prod24 h3{
+    width: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    letter-spacing: .0001px;
+    text-align: center;
+    padding-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    font-weight: 400;
+}
+
+#prod13 button,
+#prod14 button,
+#prod15 button,
+#prod16 button,
+#prod17 button,
+#prod18 button,
+#prod19 button,
+#prod20 button,
+#prod21 button,
+#prod22 button,
+#prod23 button,
+#prod24 button{
+    font-size: 18px;
+    color: #fff;
+    background-color: #352101;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-left: 29%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+    border: none;
+}
+
+#prod13 button:hover,
+#prod14 button:hover,
+#prod15 button:hover,
+#prod16 button:hover,
+#prod17 button:hover,
+#prod18 button:hover,
+#prod19 button:hover,
+#prod20 button:hover,
+#prod21 button:hover,
+#prod22 button:hover,
+#prod23 button:hover,
+#prod24 button:hover{
+    background-color: #c5812b;
+}
+
+.music__page{
+    width: 100%;
+    height: 520px;
+    background-color: #c5812b;
+    margin-bottom: 0%;
+    float: left;
+}
+
+.music__page h1{
+    color: #fff;
+    font-size: 48px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1rem 0rem;
+    text-align: center;
+}
+
+#p_edit_me{
+    font-size: 20px;
+    font-weight: 500;
+    padding: .25rem;
+}
+
+.stream{
+    width: 20%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    background-color: #c5812b;
+    margin: 5rem 0rem 0rem 2rem;
+    padding: .75rem;
+    float: left;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px -10px black;
+}
+
+.job__page{
+    width: 100%;
+    height: 500px;
+    background-color: #e9e7e5;
+    margin-bottom: 0%;
+    float: left;
+}
+
+#hiring{
+    margin-top: 1rem;
+    text-align: start;
+    color: #c5812b;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+}
+
+.job__heading h2{
+    text-align: start;
+    color: #352101;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+}
+
+.job__heading h3{
+    font-size: 30px;
+    color: #352101;
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px 0px;
+    margin-left: 1rem;
+}
+
+.job__heading img{
+    width: 45%;
+    margin-top: 3rem;
+    padding: 0rem;
+    float: right;
+}
+
+.qualifications li{
+    list-style:disc;
+    list-style-position: inside;
+    color: #000;
+    font-size: 18px;
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1rem;
+}
+
+#salary,
+#raw{
+    margin-left: .50rem;
+    color: #000;
+    font-size: 18px;
+    text-align: start;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: none;
+    list-style: none;
+}
+
+.eds__footer{
+    background-color: #352101;
+    width: 98%;
+    height: 200px;
+    float: left;
+    margin: 1% 1.4% 0% 1%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px -10px black;
+}
+
+.eds__footer h1{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 1rem;
+    margin-top: 1.25rem;
+}
+
+.eds__footer h2{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.navbar__obj #hide-footer{
+    text-align: center;
+    padding: 4rem;
+    margin-top: rem;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    border: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #b0b0b0;
+    background-clip: padding-box;
+    border: 0.05em solid #eeeeee;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e8e3e3;
+    border-radius: 8px;
+}
